@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>FaSi Mini App</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+    button {
+      padding: 12px 20px;
+      background: #22c55e;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🚀 FaSi Mini App</h1>
+  <p>Welcome to FaSi Telegram Mini App</p>
+
+  <button onclick="earn()">Earn 1 Point</button>
+
+  <p id="points">Points: 0</p>
+
+  <script>
+    let points = 0;
+    function earn() {
+      points++;
+      document.getElementById("points").innerText = "Points: " + points;
+    }
+  </script>
+
+</body>
+  </html>
